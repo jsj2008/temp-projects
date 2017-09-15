@@ -9,6 +9,21 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>XYMaintenance copy 2 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>XYMaintenance copy 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>XYMaintenance copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>XYMaintenance.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +33,21 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>206185691DEBD65B00A61A41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3BC46A81F6BBE2500EC9082</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3BC487C1F6BC0C200EC9082</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3BC4A501F6BC0D800EC9082</key>
 		<dict>
 			<key>primary</key>
 			<true/>

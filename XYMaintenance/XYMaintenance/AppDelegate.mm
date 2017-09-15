@@ -41,7 +41,16 @@
 #pragma mark - on app launched
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-    
+    /*
+    马甲：1.target-ICON  ，target-displayname ，target-bundleid
+     2.appstore后台-推广页, appstore后台-bundleid, appstore后台-app名称， appstore后台-app图标，appstore后台-app描述
+    3.代码
+     根据HIVEST来判断，a.加载不同的key 
+   
+     */
+#ifdef HIVEST
+    NSLog(@"HIVEST");
+#endif
     /**
      *  注册远程通知
      */
