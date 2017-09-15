@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYOrderListMapViewController">
+            <connections>
+                <outlet property="assignOrdersButton" destination="75e-Pv-r9e" id="MsS-HQ-CIO"/>
+                <outlet property="containerView" destination="QUE-Ni-xyi" id="LKN-y6-4LL"/>
+                <outlet property="locButton" destination="OlL-4N-cVx" id="KRU-fR-o9Q"/>
+                <outlet property="overtimeOrdersButton" destination="YbD-PO-rhR" id="SQa-Mp-NIz"/>
+                <outlet property="panelHeight" destination="aMK-fQ-u8b" id="llI-e7-tvh"/>
+                <outlet property="tableView" destination="TUB-yb-FkY" id="qnN-q4-QkH"/>
+                <outlet property="todayOrdersButton" destination="0Ux-hw-IJd" id="P7Q-qC-E9p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUE-Ni-xyi">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlL-4N-cVx">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="81C-y4-avP"/>
+                                <constraint firstAttribute="height" constant="32" id="NyU-yc-SUc"/>
+                            </constraints>
+                            <state key="normal" image="btn_loc"/>
+                            <connections>
+                                <action selector="focusOnMyLocation:" destination="-1" eventType="touchUpInside" id="phO-wk-QfJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-hw-IJd">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="nfV-Kk-Wbh"/>
+                                <constraint firstAttribute="height" constant="40" id="sfy-41-nMK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="今日 预约" backgroundImage="bg_map_btn">
+                                <color key="titleColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showTodayOrders:" destination="-1" eventType="touchUpInside" id="tad-ru-f1q"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75e-Pv-r9e">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Qnr-C0-iwF"/>
+                                <constraint firstAttribute="width" constant="40" id="ww3-rH-rTF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="接单 地图" backgroundImage="bg_map_btn">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="findUnsignedOrders:" destination="-1" eventType="touchUpInside" id="Mm6-nW-6bi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbD-PO-rhR">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="UT1-pl-gPt"/>
+                                <constraint firstAttribute="width" constant="40" id="xyx-IL-ABS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="超时 订单" backgroundImage="bg_map_btn">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showOverTimeOrders:" destination="-1" eventType="touchUpInside" id="nI0-64-0Yk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="75e-Pv-r9e" secondAttribute="trailing" constant="10" id="8us-qo-zCR"/>
+                        <constraint firstItem="75e-Pv-r9e" firstAttribute="top" secondItem="0Ux-hw-IJd" secondAttribute="bottom" constant="10" id="HCH-K3-BqZ"/>
+                        <constraint firstItem="YbD-PO-rhR" firstAttribute="top" secondItem="75e-Pv-r9e" secondAttribute="bottom" constant="10" id="Ysq-0l-3qx"/>
+                        <constraint firstAttribute="trailing" secondItem="OlL-4N-cVx" secondAttribute="trailing" constant="15" id="btg-Ju-qhK"/>
+                        <constraint firstAttribute="trailing" secondItem="YbD-PO-rhR" secondAttribute="trailing" constant="10" id="fvj-U1-4jn"/>
+                        <constraint firstAttribute="bottom" secondItem="OlL-4N-cVx" secondAttribute="bottom" constant="15" id="g8O-uH-9uc"/>
+                        <constraint firstAttribute="trailing" secondItem="0Ux-hw-IJd" secondAttribute="trailing" constant="10" id="thr-2z-iS6"/>
+                        <constraint firstItem="0Ux-hw-IJd" firstAttribute="top" secondItem="QUE-Ni-xyi" secondAttribute="top" constant="10" id="zz4-n7-HSJ"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="OaL-e1-VtE">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="4oD-l8-kqo"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TUB-yb-FkY">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="135" id="aMK-fQ-u8b"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TUB-yb-FkY" firstAttribute="top" secondItem="QUE-Ni-xyi" secondAttribute="bottom" id="9EH-G4-3xt"/>
+                <constraint firstItem="TUB-yb-FkY" firstAttribute="top" secondItem="OaL-e1-VtE" secondAttribute="bottom" id="Amn-WD-mll"/>
+                <constraint firstItem="QUE-Ni-xyi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CNu-aE-adk"/>
+                <constraint firstAttribute="bottom" secondItem="TUB-yb-FkY" secondAttribute="bottom" id="QWl-yR-wWY"/>
+                <constraint firstItem="TUB-yb-FkY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UZL-HN-2gP"/>
+                <constraint firstAttribute="bottom" secondItem="QUE-Ni-xyi" secondAttribute="bottom" constant="135" id="WNU-bv-DPK"/>
+                <constraint firstAttribute="trailing" secondItem="QUE-Ni-xyi" secondAttribute="trailing" id="Wyr-QV-CZS"/>
+                <constraint firstAttribute="trailing" secondItem="OaL-e1-VtE" secondAttribute="trailing" id="fVf-HW-Bca"/>
+                <constraint firstItem="OaL-e1-VtE" firstAttribute="top" secondItem="QUE-Ni-xyi" secondAttribute="bottom" constant="-227" id="l1B-sH-M4X"/>
+                <constraint firstItem="QUE-Ni-xyi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vJK-Zt-8Gj"/>
+                <constraint firstAttribute="trailing" secondItem="TUB-yb-FkY" secondAttribute="trailing" id="y5U-tg-Taz"/>
+                <constraint firstItem="OaL-e1-VtE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zR4-em-Gra"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="WNU-bv-DPK"/>
+                    <exclude reference="l1B-sH-M4X"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-184" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_map_btn" width="40" height="40"/>
+        <image name="btn_loc" width="17" height="17"/>
+        <image name="map_shadow" width="2" height="2"/>
+    </resources>
+</document>

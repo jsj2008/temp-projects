@@ -1,0 +1,17 @@
+platform :ios, '7.0' 
+inhibit_all_warnings!
+target 'XYMaintenance' do
+  pod 'AFNetworking'
+  pod 'Reachability'
+  pod 'Toast'
+  pod 'YYWebImage'
+  pod 'Masonry'
+  pod 'MJExtension'
+  pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+  pod 'CocoaSecurity'
+#  pod 'Reveal-iOS-SDK', '1.6.2', :configurations => ['Debug']
+end
+
+
+
+

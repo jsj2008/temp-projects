@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XYTrafficPOICell" rowHeight="76" id="KGk-i7-Jjw" customClass="XYTrafficPOICell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd5-0s-Lux">
+                        <rect key="frame" x="0.0" y="30" width="65" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="AsF-cT-6ue"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AsF-cT-6ue"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="上海市闵行区陈行路 2388号3号楼" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-RI-jxI">
+                        <rect key="frame" x="76" y="29" width="176" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfX-Tw-vkc">
+                        <rect key="frame" x="263" y="0.0" width="57" height="76"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="选定">
+                            <color key="titleColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvP-xo-Wlm">
+                        <rect key="frame" x="65" y="0.0" width="1" height="76"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="ZQT-uH-9fl"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3f3-6u-x3j">
+                        <rect key="frame" x="262" y="0.0" width="1" height="76"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="eil-rQ-taO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3f3-6u-x3j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="43o-9g-dxv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nfX-Tw-vkc" secondAttribute="trailing" constant="-8" id="6wX-DB-vd0"/>
+                    <constraint firstItem="yd5-0s-Lux" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BlO-BP-e79"/>
+                    <constraint firstItem="yd5-0s-Lux" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Dyx-pH-QDP"/>
+                    <constraint firstItem="PvP-xo-Wlm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="Fgc-vr-4rP"/>
+                    <constraint firstItem="PvP-xo-Wlm" firstAttribute="leading" secondItem="yd5-0s-Lux" secondAttribute="trailing" id="HPh-gD-IyR"/>
+                    <constraint firstItem="MPD-RI-jxI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="120" id="JLy-JZ-XX3"/>
+                    <constraint firstItem="3f3-6u-x3j" firstAttribute="leading" secondItem="MPD-RI-jxI" secondAttribute="trailing" constant="10" id="Ohu-6Z-0BO"/>
+                    <constraint firstItem="nfX-Tw-vkc" firstAttribute="leading" secondItem="3f3-6u-x3j" secondAttribute="trailing" id="bp2-5X-z4p"/>
+                    <constraint firstItem="nfX-Tw-vkc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fQb-mE-nXU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3f3-6u-x3j" secondAttribute="trailing" constant="49" id="fmV-76-L1h"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PvP-xo-Wlm" secondAttribute="bottom" constant="-9" id="o21-C1-sLG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3f3-6u-x3j" secondAttribute="bottom" constant="-9" id="old-iv-Qme"/>
+                    <constraint firstItem="PvP-xo-Wlm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="57" id="p1V-qj-TIu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nfX-Tw-vkc" secondAttribute="bottom" constant="-9" id="q1M-qg-1AF"/>
+                    <constraint firstItem="MPD-RI-jxI" firstAttribute="leading" secondItem="PvP-xo-Wlm" secondAttribute="trailing" constant="10" id="q1P-fb-47D"/>
+                    <constraint firstItem="nfX-Tw-vkc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="sTp-rL-CM5"/>
+                    <constraint firstItem="yd5-0s-Lux" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="tEp-Ok-gxZ"/>
+                    <constraint firstItem="MPD-RI-jxI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yYB-Bc-P7b"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="tEp-Ok-gxZ"/>
+                        <exclude reference="JLy-JZ-XX3"/>
+                        <exclude reference="fQb-mE-nXU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="MPD-RI-jxI" id="we5-Ub-adM"/>
+                <outlet property="devider1Width" destination="ZQT-uH-9fl" id="1J1-Ps-3oJ"/>
+                <outlet property="devider2Width" destination="eil-rQ-taO" id="ZAD-Tu-AHC"/>
+                <outlet property="poiIdLabel" destination="yd5-0s-Lux" id="fTw-V9-kAf"/>
+                <outlet property="selectButton" destination="nfX-Tw-vkc" id="v0U-N3-pwu"/>
+            </connections>
+            <point key="canvasLocation" x="356" y="427"/>
+        </tableViewCell>
+    </objects>
+</document>

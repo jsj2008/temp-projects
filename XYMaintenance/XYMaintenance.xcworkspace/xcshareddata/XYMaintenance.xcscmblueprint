@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "69E8B2232A26F8845AB98A09DB87B79CB885A6D5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B937649AFF0927DE7FAE80A1F0FE93F54F794835" : 9223372036854775807,
+    "8F0B13FD575691BF7DCF551519EB2A2A15AC7179" : 9223372036854775807,
+    "69E8B2232A26F8845AB98A09DB87B79CB885A6D5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CE50E9B8-D42B-4198-8A33-03EF2537C7F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B937649AFF0927DE7FAE80A1F0FE93F54F794835" : "HiEngineerApp\/XYMaintenance\/XYMaintenance\/Util\/AESCrypt-ObjC\/",
+    "8F0B13FD575691BF7DCF551519EB2A2A15AC7179" : "HiEngineerApp\/XYMaintenance\/XYMaintenance\/Util\/AES128\/",
+    "69E8B2232A26F8845AB98A09DB87B79CB885A6D5" : "HiEngineerApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "XYMaintenance",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "XYMaintenance\/XYMaintenance.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.ops.kingnet.com:HiFE\/HiEngineerApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "69E8B2232A26F8845AB98A09DB87B79CB885A6D5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HSFGitHub\/AES128CBC_PKCS5Padding.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F0B13FD575691BF7DCF551519EB2A2A15AC7179"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Gurpartap\/AESCrypt-ObjC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B937649AFF0927DE7FAE80A1F0FE93F54F794835"
+    }
+  ]
+}

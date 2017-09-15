@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XYPartInfoCellIdentifier" id="KGk-i7-Jjw" customClass="XYPartInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emi-7i-FSx">
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ZEp-yY-1Kp"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="Nsh-ck-k2U"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="零件名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1m-DO-OBh">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="零件编号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vks-dL-zp9">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="触摸屏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29e-gm-jS4">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ER123434" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rH-3c-2VD">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nsh-ck-k2U" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2mI-8v-J8H"/>
+                    <constraint firstItem="Emi-7i-FSx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="BOu-Yo-dqN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Emi-7i-FSx" secondAttribute="trailing" constant="7" id="ETs-dp-orN"/>
+                    <constraint firstItem="Vks-dL-zp9" firstAttribute="top" secondItem="Emi-7i-FSx" secondAttribute="bottom" constant="15" id="F7b-tj-BWa"/>
+                    <constraint firstItem="Vks-dL-zp9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="IJT-W0-siB"/>
+                    <constraint firstItem="7rH-3c-2VD" firstAttribute="leading" secondItem="Vks-dL-zp9" secondAttribute="trailing" constant="5" id="PXT-tK-0Zh"/>
+                    <constraint firstItem="T1m-DO-OBh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="ctf-3U-Idy"/>
+                    <constraint firstItem="Nsh-ck-k2U" firstAttribute="leading" secondItem="Emi-7i-FSx" secondAttribute="trailing" constant="23" id="deK-jD-SON"/>
+                    <constraint firstItem="Emi-7i-FSx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="idJ-ge-Mwf"/>
+                    <constraint firstItem="Emi-7i-FSx" firstAttribute="top" secondItem="T1m-DO-OBh" secondAttribute="bottom" constant="15" id="n9K-ks-t3d"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Nsh-ck-k2U" secondAttribute="trailing" constant="15" id="nQD-Uf-3rx"/>
+                    <constraint firstItem="29e-gm-jS4" firstAttribute="leading" secondItem="T1m-DO-OBh" secondAttribute="trailing" constant="5" id="s0g-5d-Zq5"/>
+                    <constraint firstItem="29e-gm-jS4" firstAttribute="centerY" secondItem="T1m-DO-OBh" secondAttribute="centerY" id="uon-eQ-32c"/>
+                    <constraint firstItem="7rH-3c-2VD" firstAttribute="centerY" secondItem="Vks-dL-zp9" secondAttribute="centerY" id="wdd-Hy-8uX"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ETs-dp-orN"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deviderHeight" destination="ZEp-yY-1Kp" id="58T-gf-DuW"/>
+                <outlet property="partIdLabel" destination="7rH-3c-2VD" id="Ytn-GL-dnv"/>
+                <outlet property="partNameLabel" destination="29e-gm-jS4" id="dXd-Nb-AyJ"/>
+            </connections>
+            <point key="canvasLocation" x="332" y="219.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="6" height="11"/>
+    </resources>
+</document>

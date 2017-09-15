@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYRecycleInputInfoViewController">
+            <connections>
+                <outlet property="tableView" destination="TbG-NA-eVU" id="50d-Oo-BoU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVy-jV-8dd">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao8-LS-ZbE">
+                            <color key="backgroundColor" red="0.81176470590000005" green="0.83921568629999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="j8U-se-gJN"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8h-Dt-Dsd" customClass="XYCustomButton">
+                            <color key="backgroundColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="CFg-bC-Oo5"/>
+                            </constraints>
+                            <state key="normal" title="下一步"/>
+                            <connections>
+                                <action selector="nextStep:" destination="-1" eventType="touchUpInside" id="MLj-Iv-pi8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="V8h-Dt-Dsd" firstAttribute="leading" secondItem="qVy-jV-8dd" secondAttribute="leading" constant="15" id="0yy-Xf-lfB"/>
+                        <constraint firstAttribute="trailing" secondItem="V8h-Dt-Dsd" secondAttribute="trailing" constant="15" id="2Xc-8E-0hu"/>
+                        <constraint firstItem="Ao8-LS-ZbE" firstAttribute="leading" secondItem="qVy-jV-8dd" secondAttribute="leading" id="COg-0H-Jex"/>
+                        <constraint firstItem="Ao8-LS-ZbE" firstAttribute="top" secondItem="qVy-jV-8dd" secondAttribute="top" id="Gho-lv-5Um"/>
+                        <constraint firstItem="V8h-Dt-Dsd" firstAttribute="centerY" secondItem="qVy-jV-8dd" secondAttribute="centerY" id="QLp-i7-Fe7"/>
+                        <constraint firstAttribute="height" constant="60" id="XDH-a4-1nk"/>
+                        <constraint firstAttribute="trailing" secondItem="Ao8-LS-ZbE" secondAttribute="trailing" id="waS-UU-K83"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TbG-NA-eVU">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qVy-jV-8dd" secondAttribute="trailing" id="A2n-q0-3dU"/>
+                <constraint firstItem="TbG-NA-eVU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KDd-Zs-aOz"/>
+                <constraint firstItem="qVy-jV-8dd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PGG-Zd-inj"/>
+                <constraint firstItem="qVy-jV-8dd" firstAttribute="top" secondItem="TbG-NA-eVU" secondAttribute="bottom" id="R5w-7r-pf3"/>
+                <constraint firstAttribute="trailing" secondItem="TbG-NA-eVU" secondAttribute="trailing" id="STU-MB-gg2"/>
+                <constraint firstItem="TbG-NA-eVU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ezm-To-mST"/>
+                <constraint firstItem="qVy-jV-8dd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gMO-Bk-FTW"/>
+                <constraint firstAttribute="bottom" secondItem="qVy-jV-8dd" secondAttribute="bottom" id="v0P-bP-M0C"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="gMO-Bk-FTW"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="358" y="177"/>
+        </view>
+    </objects>
+</document>

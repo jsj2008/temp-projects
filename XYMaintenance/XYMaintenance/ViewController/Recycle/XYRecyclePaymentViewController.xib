@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYRecyclePaymentViewController">
+            <connections>
+                <outlet property="submitButton" destination="8Jo-tI-dCo" id="HWq-Zx-pdf"/>
+                <outlet property="tableView" destination="WpG-aD-uXH" id="w18-Zp-Acr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SG-nt-zAo">
+                    <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZJ-Ek-ld7">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.81176470590000005" green="0.83921568629999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ZM0-cw-ynS"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jo-tI-dCo" customClass="XYCustomButton">
+                            <rect key="frame" x="15" y="10" width="570" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Pgi-yn-GOE"/>
+                            </constraints>
+                            <state key="normal" title="确认付款"/>
+                            <connections>
+                                <action selector="confirmPayment:" destination="-1" eventType="touchUpInside" id="iHG-gU-bRX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fZJ-Ek-ld7" firstAttribute="top" secondItem="2SG-nt-zAo" secondAttribute="top" id="E7N-Je-YIe"/>
+                        <constraint firstItem="8Jo-tI-dCo" firstAttribute="centerY" secondItem="2SG-nt-zAo" secondAttribute="centerY" id="G1F-Fc-hXM"/>
+                        <constraint firstItem="fZJ-Ek-ld7" firstAttribute="leading" secondItem="2SG-nt-zAo" secondAttribute="leading" id="Iwc-aC-hun"/>
+                        <constraint firstItem="8Jo-tI-dCo" firstAttribute="leading" secondItem="2SG-nt-zAo" secondAttribute="leading" constant="15" id="UJD-m2-mYT"/>
+                        <constraint firstAttribute="trailing" secondItem="8Jo-tI-dCo" secondAttribute="trailing" constant="15" id="Xgf-e8-hqB"/>
+                        <constraint firstAttribute="height" constant="60" id="brf-Nq-vmt"/>
+                        <constraint firstAttribute="trailing" secondItem="fZJ-Ek-ld7" secondAttribute="trailing" id="y3e-K8-kIl"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WpG-aD-uXH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2SG-nt-zAo" secondAttribute="trailing" id="QEj-aG-T11"/>
+                <constraint firstItem="2SG-nt-zAo" firstAttribute="top" secondItem="WpG-aD-uXH" secondAttribute="bottom" id="W5f-rD-THf"/>
+                <constraint firstAttribute="trailing" secondItem="WpG-aD-uXH" secondAttribute="trailing" id="YVt-gS-Pox"/>
+                <constraint firstItem="WpG-aD-uXH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dfZ-37-AVh"/>
+                <constraint firstItem="2SG-nt-zAo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eu1-Hv-U79"/>
+                <constraint firstItem="WpG-aD-uXH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="j4B-gB-Tsm"/>
+                <constraint firstAttribute="bottom" secondItem="2SG-nt-zAo" secondAttribute="bottom" id="zG5-6B-rqf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

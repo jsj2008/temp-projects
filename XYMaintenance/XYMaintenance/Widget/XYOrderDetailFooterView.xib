@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XYOrderDetailFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="318"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKg-es-ny2" customClass="XYCommentView">
+                    <rect key="frame" x="0.0" y="0.0" width="570" height="258"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuu-aQ-87i">
+                    <rect key="frame" x="0.0" y="258" width="570" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="beM-WP-UNn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="308-Sl-ZGz">
+                    <rect key="frame" x="0.0" y="259" width="570" height="59"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.97254901960784312" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XKg-es-ny2" secondAttribute="bottom" constant="60" id="1yv-OI-09q"/>
+                <constraint firstItem="308-Sl-ZGz" firstAttribute="top" secondItem="wuu-aQ-87i" secondAttribute="bottom" id="7DW-nA-WwH"/>
+                <constraint firstAttribute="trailing" secondItem="wuu-aQ-87i" secondAttribute="trailing" id="9an-ip-hhd"/>
+                <constraint firstItem="wuu-aQ-87i" firstAttribute="top" secondItem="XKg-es-ny2" secondAttribute="bottom" id="B7N-To-Kcp"/>
+                <constraint firstAttribute="trailing" secondItem="XKg-es-ny2" secondAttribute="trailing" id="Fsv-bj-Sic"/>
+                <constraint firstItem="XKg-es-ny2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ku4-Wq-ll3"/>
+                <constraint firstItem="XKg-es-ny2" firstAttribute="leading" secondItem="wuu-aQ-87i" secondAttribute="trailing" constant="-240" id="NUc-A6-Hud"/>
+                <constraint firstItem="wuu-aQ-87i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U3N-wF-dK2"/>
+                <constraint firstItem="XKg-es-ny2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="X5F-YS-tLM"/>
+                <constraint firstAttribute="bottom" secondItem="308-Sl-ZGz" secondAttribute="bottom" id="k9f-ix-WVe"/>
+                <constraint firstAttribute="trailing" secondItem="308-Sl-ZGz" secondAttribute="trailing" id="meh-E3-TKA"/>
+                <constraint firstItem="308-Sl-ZGz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="z5R-Uo-uya"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NUc-A6-Hud"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="673" y="209"/>
+        </view>
+    </objects>
+</document>

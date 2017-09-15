@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYRecycleEvaluationViewController">
+            <connections>
+                <outlet property="collectionView" destination="faz-Pn-yXS" id="zXz-s8-MrY"/>
+                <outlet property="deviderHeight" destination="8OV-0V-uls" id="Xhk-Vk-trh"/>
+                <outlet property="progressBar" destination="UAS-x8-yLt" id="XVQ-KR-UZj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-f3-atE">
+                    <subviews>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UAS-x8-yLt">
+                            <color key="tintColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="BxW-As-OAx"/>
+                            </constraints>
+                            <color key="progressTintColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="trackTintColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </progressView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="UAS-x8-yLt" secondAttribute="trailing" constant="15" id="J5G-fG-jyH"/>
+                        <constraint firstItem="UAS-x8-yLt" firstAttribute="centerY" secondItem="dgr-f3-atE" secondAttribute="centerY" id="WPd-Pd-HGK"/>
+                        <constraint firstItem="UAS-x8-yLt" firstAttribute="leading" secondItem="dgr-f3-atE" secondAttribute="leading" constant="15" id="pNd-1v-lsG"/>
+                        <constraint firstAttribute="height" constant="26" id="sUs-Vp-OJF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njY-Lh-3mr">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUg-cu-U9D">
+                            <color key="backgroundColor" red="0.81176470590000005" green="0.83921568629999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="8OV-0V-uls"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UC6-bC-Zu3" customClass="XYCustomButton">
+                            <color key="backgroundColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="0wi-41-JIS"/>
+                            </constraints>
+                            <state key="normal" title="提交估价"/>
+                            <connections>
+                                <action selector="sunmitEvaluation:" destination="-1" eventType="touchUpInside" id="hvu-r6-Zea"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oUg-cu-U9D" secondAttribute="trailing" id="8Wu-OS-pBq"/>
+                        <constraint firstItem="oUg-cu-U9D" firstAttribute="leading" secondItem="njY-Lh-3mr" secondAttribute="leading" id="O5n-go-pmo"/>
+                        <constraint firstItem="UC6-bC-Zu3" firstAttribute="leading" secondItem="njY-Lh-3mr" secondAttribute="leading" constant="15" id="SkN-fV-DvL"/>
+                        <constraint firstItem="oUg-cu-U9D" firstAttribute="top" secondItem="njY-Lh-3mr" secondAttribute="top" id="Y66-7Y-b2S"/>
+                        <constraint firstAttribute="height" constant="60" id="elv-0c-UCc"/>
+                        <constraint firstAttribute="trailing" secondItem="UC6-bC-Zu3" secondAttribute="trailing" constant="15" id="hVN-11-4R0"/>
+                        <constraint firstItem="UC6-bC-Zu3" firstAttribute="centerY" secondItem="njY-Lh-3mr" secondAttribute="centerY" id="sJ0-wi-maj"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="faz-Pn-yXS">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9CS-rC-l0N">
+                        <size key="itemSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="faz-Pn-yXS" secondAttribute="trailing" id="5ut-0u-P0g"/>
+                <constraint firstAttribute="bottom" secondItem="njY-Lh-3mr" secondAttribute="bottom" id="6bf-rd-gyr"/>
+                <constraint firstItem="njY-Lh-3mr" firstAttribute="top" secondItem="faz-Pn-yXS" secondAttribute="bottom" id="ClX-8Z-7hf"/>
+                <constraint firstItem="dgr-f3-atE" firstAttribute="leading" secondItem="faz-Pn-yXS" secondAttribute="trailing" constant="-415" id="YJW-oV-sAw"/>
+                <constraint firstItem="njY-Lh-3mr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dk9-KI-Oxv"/>
+                <constraint firstItem="dgr-f3-atE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ecb-dF-C37"/>
+                <constraint firstAttribute="trailing" secondItem="dgr-f3-atE" secondAttribute="trailing" id="gco-6n-n16"/>
+                <constraint firstAttribute="trailing" secondItem="njY-Lh-3mr" secondAttribute="trailing" id="iAj-H7-jiE"/>
+                <constraint firstItem="faz-Pn-yXS" firstAttribute="top" secondItem="dgr-f3-atE" secondAttribute="bottom" id="oBI-2G-LuD"/>
+                <constraint firstItem="faz-Pn-yXS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y3F-yv-2mr"/>
+                <constraint firstItem="dgr-f3-atE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ysk-Z6-wyR"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="YJW-oV-sAw"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-374" y="100"/>
+        </view>
+    </objects>
+</document>

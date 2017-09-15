@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="XYAttendanceDetailView" id="U6b-Vx-4bR" customClass="XYAttendanceDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMg-Y8-E8n">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC8-Ye-hSk">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zC8-Ye-hSk" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="0.5" id="0G1-Zo-fQe"/>
+                <constraint firstItem="zC8-Ye-hSk" firstAttribute="height" secondItem="U6b-Vx-4bR" secondAttribute="height" id="10R-Cv-AbV"/>
+                <constraint firstItem="vMg-Y8-E8n" firstAttribute="height" secondItem="U6b-Vx-4bR" secondAttribute="height" id="1XH-DT-0Ms"/>
+                <constraint firstAttribute="trailing" secondItem="zC8-Ye-hSk" secondAttribute="trailing" id="3Li-GB-WdB"/>
+                <constraint firstItem="vMg-Y8-E8n" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="8pi-6v-LuW"/>
+                <constraint firstItem="vMg-Y8-E8n" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="O2t-oS-XE7"/>
+                <constraint firstItem="zC8-Ye-hSk" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="hfZ-Jj-Upg"/>
+                <constraint firstItem="vMg-Y8-E8n" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="0.5" id="y16-0a-YOy"/>
+            </constraints>
+            <connections>
+                <outlet property="leftDetailLabel" destination="vMg-Y8-E8n" id="9Le-gu-RZ6"/>
+                <outlet property="rightDetailLabel" destination="zC8-Ye-hSk" id="Xvh-KV-4ui"/>
+            </connections>
+            <point key="canvasLocation" x="-543" y="92"/>
+        </collectionReusableView>
+    </objects>
+</document>

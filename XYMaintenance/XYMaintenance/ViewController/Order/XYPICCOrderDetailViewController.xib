@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYPICCOrderDetailViewController">
+            <connections>
+                <outlet property="bottomMargin" destination="f7o-Lm-mdD" id="WAk-CV-avY"/>
+                <outlet property="deviderHeight" destination="gNh-mR-mUC" id="YR6-d5-ldv"/>
+                <outlet property="tableView" destination="AzK-Xe-JKs" id="196-Y4-VgY"/>
+                <outlet property="uploadButton" destination="hZb-Qh-B96" id="Fpj-cJ-5Zm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTX-Dz-rpY">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1W-9x-swl">
+                            <color key="backgroundColor" red="0.81176470590000005" green="0.83921568629999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="gNh-mR-mUC"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-Qh-B96" customClass="XYCustomButton">
+                            <color key="backgroundColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="LQe-Uz-Gkc"/>
+                            </constraints>
+                            <state key="normal" title="上传信息并收款"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="hZb-Qh-B96" firstAttribute="leading" secondItem="uTX-Dz-rpY" secondAttribute="leading" constant="15" id="JLH-bf-UaC"/>
+                        <constraint firstAttribute="trailing" secondItem="b1W-9x-swl" secondAttribute="trailing" id="NOy-sN-62Y"/>
+                        <constraint firstItem="b1W-9x-swl" firstAttribute="leading" secondItem="uTX-Dz-rpY" secondAttribute="leading" id="Pdf-Q2-BfX"/>
+                        <constraint firstAttribute="trailing" secondItem="hZb-Qh-B96" secondAttribute="trailing" constant="15" id="VBo-Xj-EGN"/>
+                        <constraint firstItem="b1W-9x-swl" firstAttribute="top" secondItem="uTX-Dz-rpY" secondAttribute="top" id="aLW-E7-qGi"/>
+                        <constraint firstAttribute="height" constant="60" id="f7o-Lm-mdD"/>
+                        <constraint firstItem="hZb-Qh-B96" firstAttribute="centerY" secondItem="uTX-Dz-rpY" secondAttribute="centerY" id="sHx-Bv-CBB"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AzK-Xe-JKs">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.96470588239999999" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AzK-Xe-JKs" secondAttribute="trailing" id="MPM-OI-aWS"/>
+                <constraint firstAttribute="bottom" secondItem="uTX-Dz-rpY" secondAttribute="bottom" id="O4O-aX-z6V"/>
+                <constraint firstItem="uTX-Dz-rpY" firstAttribute="top" secondItem="AzK-Xe-JKs" secondAttribute="bottom" id="QM1-Ba-5Gz"/>
+                <constraint firstItem="uTX-Dz-rpY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gBS-2S-wCt"/>
+                <constraint firstItem="AzK-Xe-JKs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t0S-VH-QZR"/>
+                <constraint firstItem="AzK-Xe-JKs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wYb-bV-0Vg"/>
+                <constraint firstAttribute="trailing" secondItem="uTX-Dz-rpY" secondAttribute="trailing" id="wdW-ti-eGJ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

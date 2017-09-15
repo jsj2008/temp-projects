@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYRecycleSelectDeviceViewController">
+            <connections>
+                <outlet property="collectionView" destination="Fx6-JR-Fok" id="ZoN-vh-VLv"/>
+                <outlet property="segmentControl" destination="F7v-GB-byH" id="vFR-ig-Bny"/>
+                <outlet property="tableView" destination="3Nq-7u-XUv" id="Ok9-Yl-nmf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Nq-7u-XUv">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="mEf-Um-GO7"/>
+                    </constraints>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F7v-GB-byH">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="2ni-gk-iF9"/>
+                    </constraints>
+                    <segments>
+                        <segment title="手机"/>
+                        <segment title="平板"/>
+                    </segments>
+                </segmentedControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Fx6-JR-Fok">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ep8-QZ-v2g">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="1" green="0.31372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fx6-JR-Fok" firstAttribute="top" secondItem="F7v-GB-byH" secondAttribute="bottom" constant="15" id="Awf-Zc-ghf"/>
+                <constraint firstAttribute="bottom" secondItem="Fx6-JR-Fok" secondAttribute="bottom" id="BGR-2o-ibW"/>
+                <constraint firstItem="F7v-GB-byH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="BUr-R4-0Oa"/>
+                <constraint firstItem="3Nq-7u-XUv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ckd-iM-6pX"/>
+                <constraint firstItem="Fx6-JR-Fok" firstAttribute="leading" secondItem="3Nq-7u-XUv" secondAttribute="trailing" id="Mf0-UQ-zFH"/>
+                <constraint firstAttribute="trailing" secondItem="Fx6-JR-Fok" secondAttribute="trailing" id="ZTf-Ic-qKJ"/>
+                <constraint firstItem="F7v-GB-byH" firstAttribute="leading" secondItem="3Nq-7u-XUv" secondAttribute="trailing" constant="15" id="mHk-49-sGD"/>
+                <constraint firstAttribute="trailing" secondItem="F7v-GB-byH" secondAttribute="trailing" constant="15" id="pEp-og-ldX"/>
+                <constraint firstItem="3Nq-7u-XUv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vnh-z3-wkR"/>
+                <constraint firstAttribute="bottom" secondItem="3Nq-7u-XUv" secondAttribute="bottom" id="wEL-48-vFc"/>
+            </constraints>
+            <point key="canvasLocation" x="227" y="313"/>
+        </view>
+    </objects>
+</document>

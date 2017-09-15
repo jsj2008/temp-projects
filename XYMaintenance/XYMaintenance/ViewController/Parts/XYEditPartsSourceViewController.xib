@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYEditPartsSourceViewController">
+            <connections>
+                <outlet property="submitButton" destination="gWn-km-VU3" id="SKG-Pi-rSs"/>
+                <outlet property="tableView" destination="WZ8-He-Ny1" id="D66-bF-Qzv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WZ8-He-Ny1">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqQ-sm-8p7">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWn-km-VU3" customClass="XYCustomButton">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="htP-tj-3cC"/>
+                            </constraints>
+                            <state key="normal" title="提交"/>
+                            <connections>
+                                <action selector="doSubmit:" destination="-1" eventType="touchUpInside" id="eRa-5I-3ha"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.96078431372549022" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gWn-km-VU3" secondAttribute="trailing" constant="15" id="0ig-Hb-94r"/>
+                        <constraint firstItem="gWn-km-VU3" firstAttribute="leading" secondItem="XqQ-sm-8p7" secondAttribute="leading" constant="15" id="6Uy-nP-7MH"/>
+                        <constraint firstAttribute="height" constant="65" id="AYw-jx-hO5"/>
+                        <constraint firstItem="gWn-km-VU3" firstAttribute="centerY" secondItem="XqQ-sm-8p7" secondAttribute="centerY" id="Lfg-CP-g5e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XqQ-sm-8p7" secondAttribute="bottom" id="EDE-m2-b0Z"/>
+                <constraint firstItem="WZ8-He-Ny1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vua-Mo-dTw"/>
+                <constraint firstAttribute="trailing" secondItem="XqQ-sm-8p7" secondAttribute="trailing" id="XEG-kf-jgP"/>
+                <constraint firstItem="WZ8-He-Ny1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eOf-7m-RAb"/>
+                <constraint firstItem="XqQ-sm-8p7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gd7-Km-6rZ"/>
+                <constraint firstAttribute="trailing" secondItem="WZ8-He-Ny1" secondAttribute="trailing" id="tGT-Bz-eB0"/>
+                <constraint firstItem="XqQ-sm-8p7" firstAttribute="top" secondItem="WZ8-He-Ny1" secondAttribute="bottom" id="xE6-5r-fN7"/>
+            </constraints>
+            <point key="canvasLocation" x="353" y="126"/>
+        </view>
+    </objects>
+</document>

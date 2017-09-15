@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XYJustifiedCell" rowHeight="44" id="KGk-i7-Jjw" customClass="XYJustifiedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pc1-67-7Da">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="JgD-Ck-vnF"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系号码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IC-oj-JEf">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="wkE-3u-FaS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Pc1-67-7Da" secondAttribute="trailing" constant="20" id="7AQ-Mf-2rF"/>
+                    <constraint firstItem="3IC-oj-JEf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Caq-kz-m7e"/>
+                    <constraint firstAttribute="centerY" secondItem="3IC-oj-JEf" secondAttribute="centerY" id="SbK-NI-1cx"/>
+                    <constraint firstItem="Pc1-67-7Da" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="85" id="jhK-es-Kad"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JgD-Ck-vnF" secondAttribute="trailing" constant="17" id="ljL-2I-kKq"/>
+                    <constraint firstItem="JgD-Ck-vnF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rmi-lg-8nJ"/>
+                    <constraint firstAttribute="centerY" secondItem="Pc1-67-7Da" secondAttribute="centerY" id="yec-56-3v8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabelView" destination="3IC-oj-JEf" id="J1w-UV-QgU"/>
+                <outlet property="xyAccessoryMark" destination="JgD-Ck-vnF" id="VJS-Xg-Jgv"/>
+                <outlet property="xyTextField" destination="Pc1-67-7Da" id="4Sx-LT-UxO"/>
+            </connections>
+            <point key="canvasLocation" x="-86" y="230"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="6" height="11"/>
+    </resources>
+</document>

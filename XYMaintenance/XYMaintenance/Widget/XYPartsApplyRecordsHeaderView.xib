@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XYPartsApplyRecordsHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sqp_bj" translatesAutoresizingMaskIntoConstraints="NO" id="HyR-Ss-OhM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="9Jb-hk-yAx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="申请状态：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-J9-OAA">
+                    <rect key="frame" x="15" y="19" width="345" height="21.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请日期：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFm-1E-vEt">
+                    <rect key="frame" x="15" y="45.5" width="172.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="申请总额：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abM-Uk-z8m">
+                    <rect key="frame" x="187.5" y="45.5" width="187.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qFm-1E-vEt" firstAttribute="width" secondItem="HyR-Ss-OhM" secondAttribute="width" multiplier="0.5" constant="-15" id="3lP-1N-nZV"/>
+                <constraint firstItem="abM-Uk-z8m" firstAttribute="centerY" secondItem="qFm-1E-vEt" secondAttribute="centerY" id="3wd-XE-VM0"/>
+                <constraint firstAttribute="bottom" secondItem="HyR-Ss-OhM" secondAttribute="bottom" id="6Ok-CL-UhJ"/>
+                <constraint firstAttribute="bottom" secondItem="qFm-1E-vEt" secondAttribute="bottom" constant="25" id="A8y-bA-C4T"/>
+                <constraint firstItem="abM-Uk-z8m" firstAttribute="leading" secondItem="qFm-1E-vEt" secondAttribute="trailing" id="Cfl-tN-x0N"/>
+                <constraint firstItem="qFm-1E-vEt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="DQs-6f-YKW"/>
+                <constraint firstAttribute="trailing" secondItem="dXJ-J9-OAA" secondAttribute="trailing" constant="15" id="E2R-gz-lmr"/>
+                <constraint firstItem="dXJ-J9-OAA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="avc-fv-hdT"/>
+                <constraint firstItem="HyR-Ss-OhM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fh0-qN-7fi"/>
+                <constraint firstAttribute="trailing" secondItem="HyR-Ss-OhM" secondAttribute="trailing" id="jUc-XH-DOS"/>
+                <constraint firstItem="HyR-Ss-OhM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jgd-ja-MC4"/>
+                <constraint firstItem="qFm-1E-vEt" firstAttribute="top" secondItem="dXJ-J9-OAA" secondAttribute="bottom" constant="5" id="mgJ-xh-hz6"/>
+                <constraint firstAttribute="trailing" secondItem="abM-Uk-z8m" secondAttribute="trailing" id="mmX-bt-MJC"/>
+                <constraint firstItem="dXJ-J9-OAA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="tVl-dY-MFY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="statusLabel" destination="dXJ-J9-OAA" id="ccW-Ek-rNj"/>
+                <outlet property="timeLabel" destination="qFm-1E-vEt" id="Kbx-ew-ZCY"/>
+                <outlet property="totalPriceLable" destination="abM-Uk-z8m" id="b8C-NK-3Th"/>
+            </connections>
+            <point key="canvasLocation" x="29.5" y="-1737.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sqp_bj" width="375" height="85"/>
+    </resources>
+</document>

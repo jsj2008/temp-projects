@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SimpleEditCell" id="KGk-i7-Jjw" customClass="SimpleEditCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="设备序列号:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="80" translatesAutoresizingMaskIntoConstraints="NO" id="51N-HQ-bbA">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="N0U-me-IfK">
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyd-K5-hCo">
+                        <state key="normal" image="btn_edit">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N0U-me-IfK" firstAttribute="centerY" secondItem="51N-HQ-bbA" secondAttribute="centerY" id="1AD-Ba-G2j"/>
+                    <constraint firstAttribute="centerY" secondItem="51N-HQ-bbA" secondAttribute="centerY" id="6IB-h0-fwC"/>
+                    <constraint firstItem="51N-HQ-bbA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="WO4-Ml-EHi"/>
+                    <constraint firstItem="Hyd-K5-hCo" firstAttribute="leading" secondItem="N0U-me-IfK" secondAttribute="trailing" constant="10" id="b7E-4z-Dv1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Hyd-K5-hCo" secondAttribute="trailing" constant="12" id="dgp-Ta-ASq"/>
+                    <constraint firstItem="Hyd-K5-hCo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g8L-0O-e3B"/>
+                    <constraint firstItem="N0U-me-IfK" firstAttribute="leading" secondItem="51N-HQ-bbA" secondAttribute="trailing" constant="10" id="v7a-ef-KbL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="editButton" destination="Hyd-K5-hCo" id="bMi-R8-d0I"/>
+                <outlet property="inputField" destination="N0U-me-IfK" id="oA0-3J-LGr"/>
+                <outlet property="xyTitleLabel" destination="51N-HQ-bbA" id="feR-Sg-Xhp"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="250"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_edit" width="13" height="13"/>
+    </resources>
+</document>
